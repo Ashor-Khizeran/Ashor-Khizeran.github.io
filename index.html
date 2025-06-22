@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal web page template with sections for About Me, Projects, Skills, and a Contact Form.">
+    <title>My Homepage</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my HTML, CSS and Javascript homepage</h1>
+        <nav aria-label="Main navigation" id="main-nav">
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me" aria-label="About Me">
+            <h2>About Me</h2>
+            <p>My name is Ashor Khizeran. I am a web developer with a passion for creating interactive and user-friendly web applications. My main goal is to improve my overall skills and knowledge in web development and gain the experience needed to excel in this field.</p>
+        </section>
+        <section id="projects" aria-label="Projects">
+            <h2>Projects</h2>
+            <p>This is the projects section. You can add your project information here.</p>
+            <div id="project-filters">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="web">Web</button>
+                <button data-filter="api">API</button>
+                <!-- Add more categories as needed -->
+            </div>
+            <article data-category="web">
+                <h3>Web Project example</h3>
+                <img src="project1.jpg" alt="Screenshot of Project 1">
+                <p>This is a brief description of the web project example. You can add more details here.</p>
+            </article>
+            <article data-category="api">
+                <h3>API Project example</h3>
+                <p>This is a brief description of the API project example. You can add more details here.</p>
+            </article>
+        </section>
+        <section id="skills" aria-label="Skills">
+            <h2>Skills</h2>
+            <p>This is the skills section. You can add your skills information here.</p>
+            <ul>
+                <li>SQL Server / Database design</li>
+                <li>HTML</li>
+                <li>CSS responsive design</li>
+                <li>JavaScript basics, DOM manipulation, event handling, JSON, and more</li>
+                <li>Git / Version Control</li>
+                <li>Agile/Scrum methodologies</li>
+                <li>Debugging and performance tuning</li>
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>Basic design patterns</li>
+            </ul>
+        </section>
+        <section id="contact-form" aria-label="Contact Form">
+            <h2>Contact Form</h2>
+            <p>If you have any questions or comments, please fill out the form below:</p>
+            <form action="#" method="post" aria-labelledby="contact-form-title">
+                <div class="form-group">
+                    <label for="contact-name">Name:</label>
+                    <input type="text" id="contact-name" name="name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email:</label>
+                    <input type="email" id="contact-email" name="email" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message:</label>
+                    <textarea id="contact-message" name="message" required></textarea>
+                </div>
+                <button type="submit" aria-label="Send message">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="logo.png" alt="Logo">
+        <p>&copy; 2025 Ashor Khizeran. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
