@@ -278,6 +278,30 @@ footer a:focus {
     nav[aria-label="Main navigation"].open ul {
         display: flex;
     }
+
+    section{
+        max-width: 85vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.15rem;
+    }
+    section {
+        max-width: 1000px;
+        padding: 40px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    nav[aria-label="Main navigation"] ul {
+        gap: 3rem;
+        font-size: 1.2rem;
+    }
+    #projects article {
+        padding: 36px 48px;
+    }
 }
 
 /* Lightbox modal styles */
